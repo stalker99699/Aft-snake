@@ -2,7 +2,8 @@
      "name": "auto-snake",
      "version": "1.0.0",
      "scripts": {
-       "start": "serve public"
+       "start": "serve public",
+       "vercel-build": "echo 'Building...' && cp -r public/* .vercel_build_output/static"
      },
      "dependencies": {
        "serve": "^14.0.0"
